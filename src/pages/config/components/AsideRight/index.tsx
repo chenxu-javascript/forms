@@ -87,7 +87,6 @@ const AsideRight = (props: Iprops, parentref: any) => {
 
   return (
     <>
-      =={count}==
       <Tabs activeKey={activeKey} onChange={activeKey => setActiveKeyed(activeKey)}>
         <TabPane tab="字段属性" key="itemInfo">
           <div className={styles.tabPane}>{activeKey === "itemInfo" && renderItemInfo()}</div>

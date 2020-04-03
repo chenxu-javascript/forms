@@ -3,12 +3,12 @@ import { post, get } from "@utils/request";
 import { admin } from "@utils/apiPrefix";
 const PROXY = "/proxy/business-template";
 // 信息项模板列表
-export async function getInfoItemTemplates(params) {
+export async function getInfoItemTemplates(params: any) {
   return post(`${admin}${PROXY}/business-template/form/template/get`, params);
 }
 
 // 信息项模板编辑
-export async function putInfoItemTemplates(params) {
+export async function putInfoItemTemplates(params: any) {
   return post(`${admin}${PROXY}/business-template/form/template`, params);
 }
 
@@ -25,6 +25,6 @@ export async function getInfoItemTemplatesConfigs({ id, ...other }) {
 }
 
 // 信息项模板数据源列表
-export async function getInfoItemDatasources(params) {
+export async function getInfoItemDatasources(params: any) {
   return get("/info-item/data-sources", params);
 }

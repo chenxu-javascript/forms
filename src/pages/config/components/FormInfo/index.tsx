@@ -33,7 +33,7 @@ const FormInfo = (
   const TextAndNumberList = getSingNumberByInputType(itemList);
   const FixedList = getFixedList(TextAndNumberList);
 
-  const getData = async() => {
+  const getData = async () => {
     const data = getValues({ nest: true });
     const resValidation = await triggerValidation();
     console.log("data =>", resValidation, data);
@@ -73,7 +73,6 @@ const FormInfo = (
     default:
       return (
         <FormContext {...methods}>
-          =={count}==
           <div className={styles.content}>
             {![3, 4].includes(config_type) && (
               <LayoutItem>{renderhooks(Attribute.TierType)}</LayoutItem>

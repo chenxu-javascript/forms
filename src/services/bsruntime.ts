@@ -6,21 +6,21 @@ import { get, post } from "@utils/request";
 const GATEWAY = "/proxy/bpm-gateway";
 
 // 查询开始节点详情
-export async function getGnrWfInsStartDetail(params) {
+export async function getGnrWfInsStartDetail(params: any) {
   return get(`${admin}${GATEWAY}/general/process/wf/ins/node/start/detail`, params);
 }
 
 // 查询待办节点详情
-export async function getGnrWfInsWaitDetail(params) {
+export async function getGnrWfInsWaitDetail(params: any) {
   return get(`${admin}${GATEWAY}/general/process/wf/ins/node/start/detail`, params);
 }
 
 // 查询下一步节点处理人或指派人
-export async function getGnrWfTaskNodeHandler(params) {
+export async function getGnrWfTaskNodeHandler(params: any) {
   return get(`${admin}${GATEWAY}/general/process/wf/task/next-node/handler`, params);
 }
 
 // 运行时数据提交
-export async function postInsNodesOperation(params) {
+export async function postInsNodesOperation(params: any) {
   return post(`${admin}${GATEWAY}/wf/ins/nodes-operation`, params);
 }
