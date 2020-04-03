@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "strict": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "noImplicitAny": false,
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@tmp/*": [
+        "src/pages/.umi/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@services/*": [
+        "src/services/*"
+      ],
+      "@config/*": [
+        "src/pages/config/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ]
+    },
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
+  },
+  "exclude": [
+    "mock",
+    "dist",
+    "node_modules",
+    ".umirc",
+    "cli",
+    ".vscode"
+  ],
+  "include": [
+    "src"
+  ]
+}

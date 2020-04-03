@@ -1,0 +1,80 @@
+.config_content {
+  &.formcontent+.formcontent {
+    padding-top: 8px;
+  }
+
+  &.formcontent {
+    padding-bottom: 20px;
+
+    &.border {
+      border-bottom: 1px solid #DEE7EC;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .formitem {
+      padding: 0 20px;
+    }
+
+    label {
+      position: relative;
+      color: rgba(0, 0, 0, .85);
+      font-size: 12px;
+    }
+
+    .components {
+      margin-top: 8px;
+    }
+
+
+  }
+}
+
+
+.required {
+  display: inline-block;
+  color: red;
+  vertical-align: middle;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  vertical-align: middle;
+  padding: 6px 20px 0 20px;
+}
+
+.label_item {
+  display: block;
+  margin: 0;
+  padding: 0 0 8px;
+  line-height: 1.5;
+  white-space: initial;
+  text-align: left;
+}
+
+.label_horizontal {
+  display: block;
+}
+
+.horizontal {
+  display: block;
+}
+
+.label_vertical {
+  display: inline-block;
+}
+
+.label_vertical+.vertical {
+  display: inline-block;
+  min-width: 240px;
+  margin-left: 12px;
+}
+
+
+.extra_text {
+  color: #666;
+  font-size: 12px;
+}

@@ -1,0 +1,4 @@
+const TRUE_CODE = "0000";
+const FETCT_TIME_OUT = 1000 * 30;
+
+export { TRUE_CODE, FETCT_TIME_OUT };

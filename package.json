@@ -1,0 +1,59 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "test": "umi test",
+    "admin": "cross-env HOST=dev-mid.scm3.yunsom.space umi dev",
+    "admin-test": "cross-env HOST=dev-mid.scm3.yunsom.cn umi dev",
+    "admin-test2": "cross-env HOST=dev-mid.scm3-2.yunsom.cn umi dev",
+    "lint": "eslint {src,mock,tests}/**/*.{ts,tsx} --fix",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "@types/classnames": "^2.2.9",
+    "@types/node": "^13.7.0",
+    "@types/qs": "^6.9.0",
+    "@types/react-resizable": "^1.7.2",
+    "@umijs/hooks": "^1.5.4",
+    "antd": "^3.19.5",
+    "classnames": "^2.2.6",
+    "dva": "^2.4.1",
+    "nanoid": "^2.1.11",
+    "react": "^16.8.6",
+    "react-dnd": "^10.0.2",
+    "react-dnd-html5-backend": "^10.0.2",
+    "react-dom": "^16.8.6",
+    "react-hook-form": "^4.8.2",
+    "react-hook-form-input": "^1.1.10",
+    "react-resizable": "^1.10.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.12",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-test-renderer": "^16.0.3",
+    "@types/webpack-env": "^1.15.1",
+    "argh": "^1.0.0",
+    "babel-eslint": "^9.0.0",
+    "cross-env": "^7.0.0",
+    "dva-model-extend": "^0.1.2",
+    "eslint": "^5.4.0",
+    "eslint-config-umi": "^1.4.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
+    "react-test-renderer": "^16.7.0",
+    "umi": "^2.9.0",
+    "umi-plugin-react": "^1.8.0",
+    "umi-types": "^0.3.0",
+    "utils-common-fn": "^1.0.1"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

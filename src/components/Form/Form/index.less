@@ -1,0 +1,85 @@
+  :global {
+    .hooks-form {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: rgba(0, 0, 0, 0.65);
+        font-size: 14px;
+        font-variant: tabular-nums;
+        line-height: 1.5;
+        list-style: none;
+        font-feature-settings: 'tnum';
+        
+        label {
+            font-size: 12px;
+        }
+    }
+    .hooks-form-inline .hooks-form-item{
+        display: inline-block;
+        margin-right: 16px;
+        margin-bottom: 0;
+        .hooks-form-item-label,  .hooks-form-item-wrapper {
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+    .ant-form-item {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: rgba(0, 0, 0, 0.65);
+        font-size: 14px;
+        font-variant: tabular-nums;
+        line-height: 1.5;
+        list-style: none;
+        font-feature-settings: 'tnum';
+        margin-bottom: 24px;
+        vertical-align: top;
+
+        & > label {
+            position: relative;
+        }
+    }
+    .hooks-form-item-label  {
+        display: inline-block;
+        width: 72px;
+        overflow: hidden;
+        line-height: 39.9999px;
+        white-space: nowrap;
+        text-align: right;
+        vertical-align: middle;
+        word-break: break-all;
+        word-wrap: break-word;
+        color: rgba(0,0,0,.65);
+        line-height: 30px;
+        & > label {
+            &::after {
+                content: ':';
+                position: relative;
+                top: -0.5px;
+                margin: 0 8px 0 2px;
+            }
+        }
+    }
+    .hooks-form-item-wrapper {
+        line-height: 30px;
+        width: 240px;
+    }
+    .hooks-row {
+        position: relative;
+        height: auto;
+        margin-right: 0;
+        margin-left: 0;
+        zoom: 1;
+        display: block;
+        box-sizing: border-box;
+        &::before, &::after {
+            display: table;
+            content: '';
+        }
+    }
+    .hooks-col {
+        position: relative;
+        min-height: 1px;
+    }
+  }

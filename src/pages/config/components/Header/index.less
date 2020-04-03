@@ -1,0 +1,83 @@
+.header {
+  box-sizing: border-box;
+  background: #0068ff;
+  color: #fff;
+}
+
+.action {
+  height: 60px;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actionItem {
+  background: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 4px;
+  margin: 0 20px;
+
+  &:hover {
+    color: #0068ff;
+    background: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.saveBtn {
+  background: #fff;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.actionLeft {
+  position: relative;
+}
+
+.actionBack {
+  position: absolute;
+  height: 50px;
+  line-height: 50px;
+  top: 5px;
+  left: 0;
+  padding: 0 20px;
+  font-size: 26px;
+  margin-right: 20px;
+  border-right: 1px solid rgba(222, 231, 236, 0.2);
+}
+
+.canEditFormInfoName {
+  height: 40px;
+  margin: 0 20px;
+  font-size: 20px;
+}
+
+
+.formInfoName {
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-left: 90px;
+  white-space: nowrap;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.actionInput {
+  margin-left: 100px;
+  background: none;
+  font-size: 20px;
+  font-weight: 600;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+
+  &::selection {
+    background: #f7f7f7;
+  }
+}

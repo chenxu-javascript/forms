@@ -1,0 +1,38 @@
+.main {
+  height: calc(100vh - 80px);
+  display: flex;
+}
+
+.negative_margin {
+  margin: -16px;
+}
+
+.AsideMain {
+  flex: 1;
+  padding: 20px;
+  background: #e3e5e9;
+  overflow-y: auto;
+}
+
+
+.AsideRight {
+  overflow-y: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .AsideRight {
+    width: 236px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1600px) {
+  .AsideRight {
+    width: 276px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .AsideRight {
+    width: 320px;
+  }
+}

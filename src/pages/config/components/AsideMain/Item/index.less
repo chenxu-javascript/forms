@@ -1,0 +1,81 @@
+.item {
+  cursor: move;
+  background: #fff;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.content {
+  padding: 20px;
+}
+
+.itemicon {
+  display: inline-block;
+  opacity: 0.85;
+  background: #EBF5FE;
+  border-radius: 6px;
+  margin-left: 6px;
+  font-size: 12px;
+  color: #3782FB;
+  padding: 4px 8px;
+  vertical-align: top;
+}
+
+.icon {
+  margin-right: 4px;
+}
+
+
+.active {
+  background: #F7F8FC;
+  border: 1px solid #619CFC;
+  box-shadow: 0.5rem 0.875rem 2.375rem rgba(39, 44, 49, 0.06),
+    0.0625rem 0.1875rem 0.5rem rgba(39, 44, 49, 0.03);
+}
+
+
+.error {
+  border: 1px solid red;
+}
+
+.title {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 24px;
+}
+
+.action {
+  z-index: 2;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+
+.copyBtn,
+.deleteBtn {
+  margin-left: 20px;
+  padding: 8px 10px 8px 36px;
+  border: 1px solid #dee7ec;
+}
+
+.copyBtn {
+  background: url('./image/copy.png') no-repeat 10px center, #ffffff;
+
+  &:hover {
+    background: url('./image/copy-active.png') no-repeat 10px center, #ffffff;
+  }
+}
+
+.deleteBtn {
+  background: url('./image/delete.png') no-repeat 10px center, #ffffff;
+
+  &:hover {
+    background: url('./image/delete-active.png') no-repeat 10px center, #ffffff;
+  }
+}

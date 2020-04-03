@@ -1,0 +1,30 @@
+@import '~antd/lib/style/themes/default.less';
+
+.ys-table {
+  width: 100%;
+  overflow: auto;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+
+  :global {
+    .ant-table-thead > tr > th {
+      padding: 4px 6px;
+      color: @primary-5;
+      font-weight: bold;
+      white-space: nowrap;
+      background: @primary-1;
+    }
+
+    .ant-table-tbody > tr > td {
+      cursor: auto;
+      padding: 8px 6px;
+      white-space: nowrap;
+    }
+  }
+  .ys-table-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
