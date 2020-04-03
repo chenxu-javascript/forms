@@ -58,7 +58,7 @@ function checkError(response: any) {
     return data && data.code ? data : response;
   }
 }
-const request = async(url: string, params: any) => {
+const request = async (url: string, params: any) => {
   const { method = "GET", body, ...other } = params || {};
   let newParams = { method, credentials: "include", ...other };
   if (method !== "GET") {
@@ -99,18 +99,18 @@ const request = async(url: string, params: any) => {
   ]);
 };
 
-export async function get(path: string, params: any) {
+export async function get(path: string, params?: any) {
   return await request(path, { method: "GET", body: params });
 }
 
-export async function del(path: string, params: any) {
+export async function del(path: string, params?: any) {
   return await request(path, { method: "DELETE", body: params });
 }
 
-export async function put(path: string, params: any) {
+export async function put(path: string, params?: any) {
   return await request(path, { method: "PUT", body: params });
 }
 
-export async function post(path: string, params: any) {
+export async function post(path: string, params?: any) {
   return await request(path, { method: "POST", body: params });
 }
